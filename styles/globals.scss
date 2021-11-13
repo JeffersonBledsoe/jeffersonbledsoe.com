@@ -1,0 +1,57 @@
+// Todo: Add PostCSS and change the font family to a root css variable (with fallback using PostCSS for I.E. compat
+// Todo: Update colours to use CSS Vars
+// Todo: Update font sizes to use CSS vars
+// Todo: PostCSS rule for logical properties fallback (IE11 support)
+
+body {
+  padding-inline: 0.5rem;
+  padding-block: 2rem;
+  margin: 0;
+  font-family: "Public sans", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+
+  background-color: #1a1a1a;
+  text-size-adjust: 100%;
+
+  color: white;
+  line-height: 1.5rem;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  margin-block-end: 40px;
+}
+
+section {
+  margin-block: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#introduction ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-inline-start: 0px;
+
+  & li {
+    margin-inline: 1rem;
+  }
+}
+
+p {
+  font-size: 12px;
+  font-weight: 00;
+}
+
+* {
+  box-sizing: border-box;
+}
