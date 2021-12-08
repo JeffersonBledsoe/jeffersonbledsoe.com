@@ -1,3 +1,4 @@
+import { PageConfig } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { ContactList } from "../components/ContactList";
@@ -125,3 +126,7 @@ export default function Home() {
     </>
   );
 }
+
+export const config: PageConfig = {
+  unstable_runtimeJS: false,
+};
