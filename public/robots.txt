@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jeffersonbledsoe.com
+
+# Sitemaps
+Sitemap: https://jeffersonbledsoe.com/sitemap.xml
