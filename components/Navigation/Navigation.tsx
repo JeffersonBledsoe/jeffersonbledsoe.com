@@ -23,11 +23,11 @@ const Navigation = () => {
         />
         {/* </div> */}
       </Link>
-      <ul className={styles.navList}>
-        {/* <NavItem title="Home" link="/" /> */}
-        {/* <NavItem title="About" link="/about" /> */}
-        <NavItem title="Get in touch" link="/projects" />
-      </ul>
+      {/* <ul className={styles.navList}> */}
+      {/* <NavItem title="Home" link="/" /> */}
+      {/* <NavItem title="About" link="/about" /> */}
+      {/* <NavItem title="Get in touch" link="/projects" /> */}
+      {/* </ul> */}
     </header>
   );
 };
