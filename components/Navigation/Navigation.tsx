@@ -14,14 +14,14 @@ const Navigation = () => {
     <header className={styles.navigation}>
       {/* eslint-disable-next-line @next/next/link-passhref */}
       <Link href="/">
-        <div style={{ float: "left" }}>
-          <Image
-            height={imageSize}
-            width={imageSize}
-            src={logo}
-            alt="Jefferson Bledsoe"
-          />
-        </div>
+        {/* <div className={styles.logo}> */}
+        <Image
+          height={imageSize}
+          width={imageSize}
+          src={logo}
+          alt="Jefferson Bledsoe"
+        />
+        {/* </div> */}
       </Link>
       <ul className={styles.navList}>
         {/* <NavItem title="Home" link="/" /> */}
