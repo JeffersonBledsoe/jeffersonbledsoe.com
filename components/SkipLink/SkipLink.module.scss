@@ -1,0 +1,20 @@
+.skiplink {
+  display: block;
+  position: absolute;
+  top: -30em;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: #6f67b3;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  text-align: center;
+  transition: top 0.1s linear;
+
+  &:focus {
+    top: 0;
+    color: #fff;
+    box-shadow: 0 0 0.5em 0.5em #6f67b3;
+  }
+}

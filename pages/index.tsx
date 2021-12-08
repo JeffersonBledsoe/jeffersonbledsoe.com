@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { ContactList } from "../components/ContactList";
 import { Navigation } from "../components/Navigation";
+import { SkipLink } from "../components/SkipLink";
 
 // Todo: Automatically get current year for footer
 // Todo: Add icons for social footers
@@ -20,6 +21,24 @@ const ProjectCard = ({ title, description, link }) => {
   );
 };
 
+const IntroHero = () => {
+  return (
+    <>
+      <span style={{ fontSize: "1.5rem" }}>Hi 👋 I&apos;m</span>
+      <h1
+        style={{
+          fontFamily: "Playfair Display",
+          fontWeight: 800,
+          fontSize: "4rem",
+          marginBlockStart: "0",
+        }}
+      >
+        Jefferson Bledsoe
+      </h1>
+    </>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -29,13 +48,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <SkipLink />
+
       <Navigation />
 
-      <main>
-        <span>Hi 👋 I&apos;m</span>
-        <h1 style={{ fontFamily: "Playfair Display", fontWeight: 800 }}>
-          Jefferson Bledsoe
-        </h1>
+      <main id="main-content">
+        <IntroHero />
         <section id="introduction">
           <p>
             I&apos;m a software developer based in Birmingham, UK. I&apos;m

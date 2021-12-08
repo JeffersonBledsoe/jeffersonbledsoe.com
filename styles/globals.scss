@@ -19,7 +19,6 @@ body {
   margin-inline: auto;
 
   color: white;
-  line-height: 1.5rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,6 +32,10 @@ section {
 
 ul {
   list-style: none;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 // #introduction ul {

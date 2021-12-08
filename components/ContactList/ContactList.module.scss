@@ -1,15 +1,17 @@
 .contactList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   font-size: 1.5rem;
 
-  & li {
-    margin-inline: 1rem;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
   }
 
-  & a {
-    // text-decoration: none;
+  & li {
+    margin-inline: 1rem;
+    margin-block: 0.25rem;
   }
 }
