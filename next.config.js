@@ -7,7 +7,9 @@ const cspMappings = {
   "img-src": ["'self'", "data:"],
   "connect-src": ["'self'", "vitals.vercel-insights.com"],
   "script-src":
-    env.NODE_ENV === "production" ? "'self'" : ["'self'", "'unsafe-eval'"],
+    env.NODE_ENV === "production"
+      ? ["'self'", "'unsafe-inline'"]
+      : ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
 };
 
 const cspHeader = Object.keys(cspMappings)
