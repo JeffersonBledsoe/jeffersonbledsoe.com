@@ -1,0 +1,15 @@
+.contactList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.5rem;
+
+  & li {
+    margin-inline: 1rem;
+  }
+
+  & a {
+    // text-decoration: none;
+  }
+}

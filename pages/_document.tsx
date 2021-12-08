@@ -8,9 +8,13 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap"
+            href="https://fonts.googleapis.com/css?family=Cabin&family=Ibarra+Real+Nova&family=Playfair+Display&family=Public+Sans&display=swap"
             rel="stylesheet"
           />
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+          {/* <link rel="alternate icon" href="/favicon.ico"></link> */}
+          {/* <link rel="icon" href="/favicon.ico" /> */}
+          <meta name="theme-color" content="#6f67b3"></meta>
         </Head>
         <body>
           <Main />

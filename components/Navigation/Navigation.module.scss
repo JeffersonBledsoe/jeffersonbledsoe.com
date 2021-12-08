@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block-end: 40px;
+
+  font-weight: bold;
+}
+
+.navList {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-inline-start: auto;
+  margin-block: 0;
+
+  .navListItem {
+    margin-right: 2rem;
+
+    &:last-of-type {
+      background-color: #6f67b3;
+      padding: 1.4rem 2.6rem;
+      border-radius: 30px;
+    }
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  //   float: left;
+}
