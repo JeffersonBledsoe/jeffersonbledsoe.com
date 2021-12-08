@@ -111,6 +111,10 @@ const securityHeaders = [
 
 module.exports = {
   reactStrictMode: true,
+  experimental: {
+    optimizeCss: true,
+    scrollRestoration: true,
+  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
