@@ -51,9 +51,9 @@ export default function Home() {
 
       <SkipLink />
 
-      <Navigation />
+      {/* <Navigation /> */}
 
-      <main id="main-content">
+      <main style={{ marginBlockStart: "8rem" }} id="main-content">
         <IntroHero />
         <section id="introduction">
           <p>
