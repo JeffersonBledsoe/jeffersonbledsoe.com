@@ -6,7 +6,7 @@ const cspMappings = {
   "style-src": ["'self'", "'unsafe-inline'", "fonts.googleapis.com"],
   "font-src": "fonts.gstatic.com",
   "img-src": ["'self'", "data:"],
-  "connect-src": ["'self'", "vitals.vercel-insights.com"],
+  "connect-src": ["'self'", "vitals.vercel-insights.com", "beampipe.io"],
   "script-src":
     env.NODE_ENV === "production"
       ? ["'self'", "'unsafe-inline'", "beampipe.io"]
