@@ -1,45 +1,19 @@
-.navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-block-end: 40px;
-
-  font-weight: bold;
-
-  @media screen and (min-width: 384px) {
-    flex-direction: row;
-  }
-}
-
 .navList {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
   margin-block: 0;
 
   @media screen and (min-width: 384px) {
     flex-direction: row;
   }
 
-  .navListItem {
+  li {
     margin-right: 2rem;
     margin-block: 1rem;
 
     @media screen and (min-width: 384px) {
       margin-block: 0;
     }
-
-    &:last-of-type {
-      background-color: #6f67b3;
-      padding: 1.4rem 2.6rem;
-      border-radius: 30px;
-      text-align: center;
-    }
   }
-}
-
-.logo {
-  float: left;
-  min-width: 200px;
 }

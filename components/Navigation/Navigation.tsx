@@ -1,33 +1,37 @@
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/favicon.svg";
 import styles from "./Navigation.module.scss";
 
-const imageSize = 80;
+type NavMapping = {
+  title: string;
+  link: string;
+};
 
-const NavItem = ({ title, link }) => {
-  return <li className={styles.navListItem}>{title}</li>;
+const NavItem = ({ title, link }: NavMapping) => {
+  return (
+    <Link href={link}>
+      <a>{title}</a>
+    </Link>
+  );
 };
 
 const Navigation = () => {
+  const navMappings: NavMapping[] = [
+    { title: "Home", link: "/" },
+    { title: "Notes/ Garden", link: "/garden" },
+  ];
   return (
-    <header className={styles.navigation}>
-      {/* eslint-disable-next-line @next/next/link-passhref */}
-      <Link href="/">
-        {/* <div className={styles.logo}> */}
-        <Image
-          height={imageSize}
-          width={imageSize}
-          src={logo}
-          alt="Jefferson Bledsoe"
-        />
-        {/* </div> */}
-      </Link>
-      {/* <ul className={styles.navList}> */}
-      {/* <NavItem title="Home" link="/" /> */}
-      {/* <NavItem title="About" link="/about" /> */}
-      {/* <NavItem title="Get in touch" link="/projects" /> */}
-      {/* </ul> */}
+    <header>
+      <nav>
+        <ul role="list" className={styles.navList}>
+          {navMappings.map((mapping) => {
+            return (
+              <li key={mapping.link}>
+                <NavItem {...mapping} />
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </header>
   );
 };

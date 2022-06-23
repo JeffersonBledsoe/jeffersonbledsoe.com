@@ -39,17 +39,10 @@ p {
   line-height: 1.5rem;
 }
 
-// #introduction ul {
-//   display: flex;
-//   flex-direction: row;
-//   list-style: none;
-//   padding-inline-start: 0px;
+pre {
+  overflow-x: scroll;
+}
 
-//   & li {
-//     margin-inline: 1rem;
-//   }
-// }
-
-* {
-  box-sizing: border-box;
+#main-content {
+  margin-block-start: 4rem;
 }

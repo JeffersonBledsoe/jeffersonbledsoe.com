@@ -43,46 +43,38 @@ export default function Garden({
         <meta name="description" content="My digital garden" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <IntroHero text="Digital Garden" />
 
-      <SkipLink />
+      <p>
+        Welcome to my digital garden! Here is where I publish anything that
+        comes to mind which might be helpful or just entertaining to future me
+        or maybe even you! This page is a <b>HUGE</b> work-in-progress right
+        now, but each garden post I make will currenty be shown on this page.
+        Expect a better browsing experience with links to full pages and
+        pagination in the future as this garden grow.
+      </p>
 
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <main style={{ marginBlockStart: "8rem" }} id="main-content">
-        <IntroHero text="Digital Garden" />
-
-        <p>
-          Welcome to my digital garden! Here is where I publish anything that
-          comes to mind which might be helpful or just entertaining to future me
-          or maybe even you! This page is a <b>HUGE</b> work-in-progress right
-          now, but each garden post I make will currenty be shown on this page.
-          Expect a better browsing experience with links to full pages and
-          pagination in the future as this garden grow.
-        </p>
-
-        <ul role="list" style={{}}>
-          {posts.map((post) => {
-            return (
-              <li
-                style={{
-                  borderTopStyle: "solid",
-                  borderTopWidth: "2px",
-                  marginBlock: "80px",
+      <ul role="list" style={{}}>
+        {posts.map((post) => {
+          return (
+            <li
+              style={{
+                borderTopStyle: "solid",
+                borderTopWidth: "2px",
+                marginBlock: "80px",
+              }}
+              key={post.slug}
+            >
+              <h2>{post?.frontmatter?.title}</h2>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: md().render(post.content),
                 }}
-                key={post.slug}
-              >
-                <h2>{post?.frontmatter?.title}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: md().render(post.content),
-                  }}
-                />
-              </li>
-            );
-          })}
-        </ul>
-      </main>
+              />
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }

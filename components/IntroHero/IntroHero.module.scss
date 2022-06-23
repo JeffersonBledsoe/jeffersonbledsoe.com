@@ -1,8 +1,11 @@
 .text {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", "Public sans", -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 800;
   font-size: 4rem;
   margin-block-start: 0;
+  line-height: 1.2;
 }
 
 .subtext {
