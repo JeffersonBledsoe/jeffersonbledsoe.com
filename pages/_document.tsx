@@ -8,7 +8,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Cabin&family=Ibarra+Real+Nova&family=Playfair+Display&family=Public+Sans&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Public+Sans&display=swap"
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
