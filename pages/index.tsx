@@ -2,6 +2,7 @@ import { PageConfig } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { ContactList } from "../components/ContactList";
+import { IntroHero } from "../components/IntroHero";
 import { Navigation } from "../components/Navigation";
 import { SkipLink } from "../components/SkipLink";
 
@@ -22,24 +23,6 @@ const ProjectCard = ({ title, description, link }) => {
   );
 };
 
-const IntroHero = () => {
-  return (
-    <>
-      <span style={{ fontSize: "1.5rem" }}>Hi 👋 I&apos;m</span>
-      <h1
-        style={{
-          fontFamily: "Playfair Display",
-          fontWeight: 800,
-          fontSize: "4rem",
-          marginBlockStart: "0",
-        }}
-      >
-        Jefferson Bledsoe
-      </h1>
-    </>
-  );
-};
-
 export default function Home() {
   return (
     <>
@@ -52,9 +35,12 @@ export default function Home() {
       <SkipLink />
 
       {/* <Navigation /> */}
+      <Link href="/garden">
+        <a>Notes/ Garden</a>
+      </Link>
 
       <main style={{ marginBlockStart: "8rem" }} id="main-content">
-        <IntroHero />
+        <IntroHero text="Jefferson Bledsoe" subtext="Hi 👋 I'm" />
         <section id="introduction">
           <p>
             I&apos;m a software developer based in Birmingham, UK. I&apos;m
