@@ -35,6 +35,9 @@ export default function Home() {
       <SkipLink />
 
       {/* <Navigation /> */}
+      <Link href="/garden">
+        <a>Notes/ Garden</a>
+      </Link>
 
       <main style={{ marginBlockStart: "8rem" }} id="main-content">
         <IntroHero text="Jefferson Bledsoe" subtext="Hi 👋 I'm" />
