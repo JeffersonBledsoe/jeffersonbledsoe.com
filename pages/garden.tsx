@@ -36,7 +36,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export default function Garden({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  console.log(posts);
   return (
     <>
       <Head>
