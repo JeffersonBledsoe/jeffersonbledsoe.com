@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "next": "12.1.6",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-feather": "^2.0.9"
+    "next-plugin-preact": "^3.0.7",
+    "preact": "^10.8.2",
+    "preact-render-to-string": "^5.2.0",
+    "react": "npm:@preact/compat@^17.1.1",
+    "react-dom": "npm:@preact/compat@^17.1.1",
+    "react-feather": "^2.0.9",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",

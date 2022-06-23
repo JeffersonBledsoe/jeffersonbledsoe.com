@@ -1,4 +1,5 @@
 const { env } = require("process");
+const withPreact = require("next-plugin-preact");
 
 const cspMappings = {
   "default-src": "'self'",
@@ -111,7 +112,7 @@ const securityHeaders = [
   },
 ];
 
-module.exports = {
+const config = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
@@ -132,3 +133,5 @@ module.exports = {
     ];
   },
 };
+
+module.exports = withPreact(config);
