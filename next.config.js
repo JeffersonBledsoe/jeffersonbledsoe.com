@@ -9,7 +9,7 @@ const cspMappings = {
   "connect-src": ["'self'", "vitals.vercel-insights.com"],
   "script-src":
     env.NODE_ENV === "production"
-      ? ["'self'", "'unsafe-inline'"]
+      ? ["'self'", "'unsafe-inline'", "beampipe.io"]
       : ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
 };
 
