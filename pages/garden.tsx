@@ -55,10 +55,11 @@ export default function Garden({
 
         <p>
           Welcome to my digital garden! Here is where I publish anything that
-          comes to mind which might be helpful to future me or maybe even you!
-          This page is a giant work-in-progress right now, but each 'post' I
-          make will be shown inline on this page. Expect a better browsing
-          experience with links to full pages and pagination in the future.
+          comes to mind which might be helpful or just entertaining to future me
+          or maybe even you! This page is a <b>HUGE</b> work-in-progress right
+          now, but each garden 'post' I make will currenty be shown on this
+          page. Expect a better browsing experience with links to full pages and
+          pagination in the future as this garden grow.
         </p>
 
         <ul role="list" style={{}}>
