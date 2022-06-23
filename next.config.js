@@ -113,6 +113,7 @@ const securityHeaders = [
 
 module.exports = {
   reactStrictMode: true,
+  swcMinify: true,
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
