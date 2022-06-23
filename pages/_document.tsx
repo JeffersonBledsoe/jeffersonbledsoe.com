@@ -1,6 +1,6 @@
 // pages/_document.js
-
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -15,14 +15,18 @@ class MyDocument extends Document {
           {/* <link rel="alternate icon" href="/favicon.ico"></link> */}
           {/* <link rel="icon" href="/favicon.ico" /> */}
           <meta name="theme-color" content="#6f67b3"></meta>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1"
-          ></meta>
         </Head>
         <body>
           <Main />
           <NextScript />
+          {process.env.NODE_ENV === "production" ? (
+            <script
+              async
+              defer
+              src="https://beampipe.io/js/tracker.js"
+              data-beampipe-domain="jeffersonbledsoe.com"
+            ></script>
+          ) : null}
         </body>
       </Html>
     );
