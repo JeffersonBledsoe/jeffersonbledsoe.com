@@ -15,6 +15,10 @@ class MyDocument extends Document {
           {/* <link rel="alternate icon" href="/favicon.ico"></link> */}
           {/* <link rel="icon" href="/favicon.ico" /> */}
           <meta name="theme-color" content="#6f67b3"></meta>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+          ></meta>
         </Head>
         <body>
           <Main />
