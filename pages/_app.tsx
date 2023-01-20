@@ -16,11 +16,12 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
-        <a rel="me" href="https://fosstodon.org/@JeffersonBledsoe">Mastodon</a>
+
       </Head>
       <SkipLink />
       <Navigation />
       <main id="main-content">
+        <a style={{ display: 'none' }} rel="me" href="https://fosstodon.org/@JeffersonBledsoe">Mastodon</a>
         <Component {...pageProps} />
       </main>
     </>
