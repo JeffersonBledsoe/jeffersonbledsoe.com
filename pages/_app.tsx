@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
+        <a rel="me" href="https://fosstodon.org/@JeffersonBledsoe">Mastodon</a>
       </Head>
       <SkipLink />
       <Navigation />
