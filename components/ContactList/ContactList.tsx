@@ -19,16 +19,6 @@ const ContactList = ({ style }) => {
   return (
     <ul style={style} className={styles.contactList} role="list">
       <ContactListItem
-        title="Mail"
-        link="mailto:me@jeffersonbledsoe.com"
-        // IconComponent={<Mail size={30} />}
-      />
-      <ContactListItem
-        title="Twitter"
-        link="https://twitter.com/jeff_bledsoe"
-        // IconComponent={<Twitter />}
-      />
-      <ContactListItem
         title="GitHub"
         link="https://github.com/JeffersonBledsoe"
         // IconComponent={<GitHub />}
@@ -36,6 +26,11 @@ const ContactList = ({ style }) => {
       <ContactListItem
         title="LinkedIn"
         link="https://www.linkedin.com/in/jeffersonbledsoe/"
+        // IconComponent={<Linkedin />}
+      />
+      <ContactListItem
+        title="Mastodon"
+        link="https://fosstodon.org/@JeffersonBledsoe"
         // IconComponent={<Linkedin />}
       />
     </ul>
